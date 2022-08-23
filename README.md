@@ -30,9 +30,37 @@
                <!-- ტექსტის შემოტანა<TextView  -->
                <!--   -->
 
+    <!-- back და search ველი -->
 
+    <LinearLayout
+    android:background="@color/colorPrimery"
+    android:layout_width="match_parent"
+    android:layout_height="45dp">
 
+    <ImageView
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/back"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:src="@drawable/searc"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:gravity="center_vertical"
+        android:paddingLeft="30dp"
+        android:textColorHint="#a39e93"
+        android:hint="search"
+        android:textSize="12sp"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
+    </LinearLayout>
 
 
     <!-- სიცარიელის ველი  <ImageView -->
@@ -194,6 +222,7 @@
 
 
         <LinearLayout
+            android:id="@+id/like_button_id"
             android:layout_marginLeft="20dp"
             android:orientation="horizontal"
             android:layout_width="0dp"
@@ -216,6 +245,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/comment_button_id"
             android:gravity="center"
             android:orientation="horizontal"
             android:layout_width="0dp"
@@ -236,6 +266,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/share_button_id"
             android:gravity="center"
             android:orientation="horizontal"
             android:layout_width="0dp"
